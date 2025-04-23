@@ -43,30 +43,33 @@ body {
 
 /* Стили для основного контента */
 .main-content {
-    flex-grow: 1; /* Занимает оставшееся вертикальное пространство */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ширина блока */
-    max-width: 1200px; /* Максимальная ширина */
-    margin: 0 auto; /* Центрирование блока по горизонтали */
-    padding: 100px 40px 40px 40px; /* Отступы: 100px СВЕРХУ, 40px справа, 40px снизу, 40px слева */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 60px 40px 60px; /* Верхний и левый отступы увеличены */
     box-sizing: border-box;
 }
 
 /* Стили для главного заголовка */
 h1 {
-    font-size: 4.5em;
-    font-weight: bold;
-    line-height: 1.1;
-    margin: 0 0 35px 0; /* Нижний отступ 35px */
+    font-size: 6.3em;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 0; /* Убран верхний отступ, контролируется padding родителя */
+    margin-left: 0; /* Убран левый отступ, контролируется padding родителя */
 }
 
 /* Стили для параграфа */
 p {
-    font-size: 1.2em;
-    line-height: 1.65;
-    max-width: 550px;
-    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.7;
+    margin-top: 20px;
+    max-width: 520px;
+    color: #777;
+    margin-left: 0; /* Убран левый отступ, контролируется padding родителя */
 }
 
 /* Медиа-запрос для адаптации под маленькие экраны */
@@ -76,17 +79,15 @@ p {
     }
 
     .main-content {
-        padding: 250px 40px 40px 40px; /* Корректируем отступы контента для мобильных */
-        max-width: 100%;
+        padding: 100px 20px 40px 20px; /* Уменьшаем отступы для мобильных */
     }
 
     h1 {
-        font-size: 2.8em; /* Уменьшаем заголовок */
+        font-size: 3.5em; /* Уменьшаем размер шрифта для мобильных */
     }
 
     p {
-        font-size: 1em; /* Уменьшаем параграф */
-        line-height: 1.6;
-        max-width: 100%;
+        font-size: 0.9em;
+        max-width: 100%; /* Параграф на всю ширину на мобильных */
     }
 }
