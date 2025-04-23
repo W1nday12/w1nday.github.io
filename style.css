@@ -1,110 +1,102 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f6f6f6;
-    color: #111;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f6f6f6;
+  color: #111;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
 }
 
 .logo {
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .contact-button {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 8px 20px;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    padding: 0 60px;
+  position: relative;
+  flex-grow: 1;
+  padding: 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero {
-    max-width: 900px;
+  max-width: 900px;
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1.2;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .circle {
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 4px 14px;
-    font-size: 2.2rem;
-    display: inline-block;
-    vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 4px 14px;
+  font-size: 2.2rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
+/* Новый стиль: описание внизу слева */
+.bottom-description {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Старое описание больше не используется */
 .description {
-    font-size: 1.1rem;
-    margin-top: 20px;
-    color: #444;
-    line-height: 1.6;
+  display: none;
 }
 
-/* Modal */
+/* Модальное окно */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
-    background-color: white;
-    padding: 30px;
-    width: 400px;
-    margin: 10% auto;
-    border-radius: 12px;
-    text-align: left;
-    position: relative;
-    font-size: 1rem;
-    color: #111;
-}
-
-.modal-content a {
-    color: #1a0dab;
-    text-decoration: underline;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 16px;
-    font-size: 20px;
-    cursor: pointer;
-}
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+ 
