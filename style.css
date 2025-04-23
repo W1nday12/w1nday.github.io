@@ -38,22 +38,32 @@ header {
     font-weight: bold;
 }
 
+/* Основной контент */
 main {
-    position: relative;
     flex-grow: 1;
-    padding: 0 60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 60px 40px 60px;
 }
 
-/* Центрированный заголовок */
-.hero h1 {
+/* Блок с заголовком и описанием вместе */
+.text-block {
+    text-align: left;
+    max-width: 700px;
+}
+
+.text-block h1 {
     font-size: 3.5rem;
     font-weight: 500;
     line-height: 1.2;
-    text-align: center;
+}
+
+.text-block p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: #444;
+    line-height: 1.6;
 }
 
 .circle {
@@ -65,18 +75,7 @@ main {
     vertical-align: middle;
 }
 
-/* Описание снизу слева */
-.bottom-description {
-    position: absolute;
-    bottom: 40px;
-    left: 60px;
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
-    max-width: 500px;
-}
-
-/* Modal */
+/* Модальное окно */
 .modal {
     display: none;
     position: fixed;
