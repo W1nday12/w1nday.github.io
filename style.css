@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 25px 40px; /* Отступы шапки (сверху/снизу, слева/справа) */
+    padding: 25px 40px;
     box-sizing: border-box;
 }
 
@@ -49,7 +49,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 120px 60px 40px 60px; /* Верхний и левый отступы увеличены */
+    padding: 160px 80px 40px 80px; /* Увеличиваем верхний и левый отступы */
     box-sizing: border-box;
 }
 
@@ -58,8 +58,8 @@ h1 {
     font-size: 6.3em;
     font-weight: 700;
     line-height: 1;
-    margin-top: 0; /* Убран верхний отступ, контролируется padding родителя */
-    margin-left: 0; /* Убран левый отступ, контролируется padding родителя */
+    margin-top: 0;
+    margin-left: 0;
 }
 
 /* Стили для параграфа */
@@ -69,25 +69,25 @@ p {
     margin-top: 20px;
     max-width: 520px;
     color: #777;
-    margin-left: 0; /* Убран левый отступ, контролируется padding родителя */
+    margin-left: 0;
 }
 
 /* Медиа-запрос для адаптации под маленькие экраны */
 @media (max-width: 768px) {
     .site-header {
-        padding: 20px 20px; /* Уменьшаем отступы шапки */
+        padding: 20px 20px;
     }
 
     .main-content {
-        padding: 100px 20px 40px 20px; /* Уменьшаем отступы для мобильных */
+        padding: 120px 20px 40px 20px; /* Корректируем отступы для мобильных */
     }
 
     h1 {
-        font-size: 3.5em; /* Уменьшаем размер шрифта для мобильных */
+        font-size: 3.5em;
     }
 
     p {
         font-size: 0.9em;
-        max-width: 100%; /* Параграф на всю ширину на мобильных */
+        max-width: 100%;
     }
 }
