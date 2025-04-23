@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Designer & Developer</title> <link rel="stylesheet" href="style.css"> </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Python Developer & Junior Programmer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-
-    <header class="site-header">
-        <div class="logo">
-            KC®&mdash;22 </div>
-        <nav>
-            <a href="#" class="contact-button">CONTACT</a> </nav>
+    <header>
+        <div class="logo">KC®—22</div>
+        <a href="#contact-modal" class="contact-button" id="contact-button">CONTACT</a>
     </header>
 
-    <main class="main-content">
-        <h1>
-            Digital Designer &amp; <br> Webflow Developer
+    <main>
+        <h1 class="main-title">
+            Python Developer <span class="circle">&</span><br>
+            Junior Programmer
         </h1>
-        <p>
-            I'm Kyle Craven, a digital designer and creative
-            Webflow developer &mdash; I work with brands globally
-            to create purpose driven websites that leave a
-            lasting impression.
+        <p class="description">
+            I'm 15, I'm in 9th grade, I love programming.<br>
+            I studied at Yandex Workshop, I know some<br>
+            Python basics.
         </p>
     </main>
 
+    <!-- Модальное окно с контактами -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <p><strong>Telegram:</strong> <a href="https://t.me/ТВОЙ_ТЕЛЕГРАМ" target="_blank">@ТВОЙ_ТЕЛЕГРАМ</a></p>
+            <p><strong>Email:</strong> <a href="mailto:ТВОЯ_ПОЧТА">ТВОЯ_ПОЧТА</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/ТВОЙ_ГИТХАБ" target="_blank">github.com/ТВОЙ_ГИТХАБ</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
