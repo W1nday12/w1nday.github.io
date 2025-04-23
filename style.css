@@ -43,25 +43,27 @@ body {
 
 /* Стили для основного контента */
 .main-content {
-    flex-grow: 1; /* Занимает оставшееся вертикальное пространство */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    /* Убрали justify-content: center; */
-    width: 100%; /* Ширина блока */
-    max-width: 1200px; /* Максимальная ширина */
-    margin: 0 auto; /* Центрирование блока по горизонтали */
-    padding: 100px 40px 40px 40px; /* Отступы: 100px СВЕРХУ, 40px справа, 40px снизу, 40px слева */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px 40px 40px;
     box-sizing: border-box;
+    align-items: flex-start; /* Выравнивание по левому краю */
 }
 
 /* Стили для главного заголовка */
 h1 {
-    font-size: 4.5em;
+    font-size: 6em; /* Увеличенный размер шрифта */
     font-weight: bold;
     line-height: 1.1;
-    margin: 0 0 35px 0; /* Нижний отступ 35px */
+    margin: 0 0 35px 0;
+    margin-left: -50px; /* Смещение влево (отрицательное значение margin) */
+    /* Добавим отступ сверху, чтобы сместить заголовок вниз, если необходимо */
+    margin-top: 50px;
 }
-
 /* Стили для параграфа */
 p {
     font-size: 1.2em;
@@ -72,21 +74,18 @@ p {
 
 /* Медиа-запрос для адаптации под маленькие экраны */
 @media (max-width: 768px) {
-    .site-header {
-        padding: 20px 20px; /* Уменьшаем отступы шапки */
-    }
-
     .main-content {
-        padding: 250px 40px 40px 40px; /* Корректируем отступы контента для мобильных */
-        max-width: 100%;
+        padding: 250px 40px 40px 40px;
+        align-items: flex-start; /* Убедимся, что и на маленьких экранах выравнивание слева */
     }
 
     h1 {
-        font-size: 2.8em; /* Уменьшаем заголовок */
+        font-size: 3.5em; /* Уменьшим размер на маленьких экранах */
+        margin-left: -30px;
     }
 
     p {
-        font-size: 1em; /* Уменьшаем параграф */
+        font-size: 1em;
         line-height: 1.6;
         max-width: 100%;
     }
